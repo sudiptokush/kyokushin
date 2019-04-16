@@ -15,8 +15,9 @@
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 90px;
-        margin: 5px 5px 5px 15px;
+        margin: 9px 5px 5px 15px;
         color: white;
+        font-size: 1.4em;
     }
     .menuBar {
         align-self: stretch;
@@ -25,7 +26,8 @@
         flex-grow: 1;
         flex-shrink: 0;
         flex-basis: 90px;
-        margin: 9px;
+        margin: 11px;
+        font-size: 1.1em;
         a {
             color: white;
             padding-left:20px;

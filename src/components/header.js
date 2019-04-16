@@ -6,7 +6,7 @@ import headerStyles from './header.module.scss'
 export default () => ( 
     <div className= {headerStyles.headerContainer}>
         <div className={headerStyles.brand}>
-            <h4>
+            <div>
             <StaticQuery
                 query={graphql`
                     query SiteTitleQuery {
@@ -18,7 +18,7 @@ export default () => (
                     }
                 `}
                 render={data =>(<> {data.site.siteMetadata.title} </>)} />
-            </h4>
+            </div>
         </div>
         <div className={headerStyles.menuBar}>
             <Link to="/">Home</Link>
