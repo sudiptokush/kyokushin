@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'left main main right'
+    'footer footer footer footer';
+
+    .header {
+        grid-area: header;
+        height:7vh;
+    }
+
+    .leftWidget {
+        grid-area: left;
+        min-width: 200px; 
+        max-width: 12vw;
+        padding-top: 40px;
+        height: 88vh;
+    }
+    
+    .rightWidget {
+        grid-area: right; 
+        min-width: 200px; 
+        max-width: 15vw;
+        height: 88vh;
+        overflow-x: auto;
+        padding-top:5px;
+    }
+    
+    .main {
+        grid-area: main;
+        padding: 15px;
+        height: 88vh;
+        overflow-x: auto;
+        min-width:500px;
+        width: 69vw;
+    }
+    
+    .footer {
+        grid-area: footer;
+        height: 3vh;
+        margin-top: 9px;
+        background: #343a40;
+        color:white;
+    }
+}
+
+
