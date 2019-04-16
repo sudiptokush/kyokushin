@@ -7,7 +7,7 @@
 
     .header {
         grid-area: header;
-        height:7vh;
+        height:6vh;
     }
 
     .leftWidget {
@@ -15,14 +15,14 @@
         min-width: 200px; 
         max-width: 12vw;
         padding-top: 40px;
-        height: 82vh;
+        height: 83vh;
     }
     
     .rightWidget {
         grid-area: right; 
         min-width: 200px; 
         max-width: 15vw;
-        height: 87vh;
+        height: 88vh;
         overflow-x: auto;
         padding-top:5px;
     }
@@ -30,7 +30,7 @@
     .main {
         grid-area: main;
         padding: 0px 20px 0px 0px;
-        height: 88vh;
+        height: 89vh;
         overflow-x: auto;
         min-width:500px;
         width: 66vw;
