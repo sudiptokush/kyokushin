@@ -15,14 +15,14 @@
         min-width: 200px; 
         max-width: 12vw;
         padding-top: 40px;
-        height: 81vh;
+        height: 82vh;
     }
     
     .rightWidget {
         grid-area: right; 
         min-width: 200px; 
         max-width: 15vw;
-        height: 86vh;
+        height: 87vh;
         overflow-x: auto;
         padding-top:5px;
     }
@@ -30,7 +30,7 @@
     .main {
         grid-area: main;
         padding: 15px;
-        height: 82vh;
+        height: 83vh;
         overflow-x: auto;
         min-width:500px;
         width: 66vw;
