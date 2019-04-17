@@ -37,8 +37,8 @@ function WidgetProcessor({ source }) {
   }
 
   const Temp = sourceObject[source].map((x: any, index: number) => {
-    return <div className="image-spacing-bottom">
-              <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
+    return <div key={index} className="image-spacing-bottom">
+              <Img fluid={x.node.childImageSharp.fluid}></Img>
             </div>
           
   });

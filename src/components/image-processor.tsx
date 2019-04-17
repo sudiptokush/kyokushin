@@ -12,6 +12,14 @@ function ImageProcessor({ source }) {
           }
         }
       }
+    kanchoShokeiMatsui:
+      file(relativePath: { eq: "kancho_shokei_matsui.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     homeBanner:
       file(relativePath: { eq: "banner.png" }) {
         childImageSharp {

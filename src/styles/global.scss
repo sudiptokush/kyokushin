@@ -39,3 +39,20 @@ body {
 .home-banner-image-content {
   margin: 2rem 2rem 4rem 2rem;
 }
+
+.tiles-container {
+  a { cursor: pointer; }
+  .tiles {
+    overflow: hidden;
+    .left-tile-image-content {
+      float: left;
+      width: 20%;
+      margin: 1rem 4rem 0rem .8rem
+    }
+    .right-tile-content {
+      color: #0c0c3e;
+      padding: 1rem 1rem 0 0;
+      text-align: justify;
+    }
+  }
+}
