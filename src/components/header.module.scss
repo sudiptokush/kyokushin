@@ -24,6 +24,8 @@
             color: white;
             padding: 0 0 0 2rem;
         }
-        
+        a[aria-current="page"]{
+            color: orange;
+        }
     }
 }
