@@ -33,6 +33,13 @@ module.exports = {
         path: `${__dirname}/src/images/inset-images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `banner`,
+        path: `${__dirname}/src/images/banner`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

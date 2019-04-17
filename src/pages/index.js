@@ -1,8 +1,13 @@
 import React from "react";
 import Layout from "../components/layout"
+import ImageProcessor from "../components/image-processor";
 
 export default () => (
   <Layout> 
+
+    <div className="home-banner-image-content">
+        <ImageProcessor source="homeBanner"></ImageProcessor>
+    </div>
     <div className="primary-question">
       What is Kyokushin ?
     </div>

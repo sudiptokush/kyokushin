@@ -12,10 +12,10 @@ function ImageProcessor({ source }) {
           }
         }
       }
-    test:
-      file(relativePath: { eq: "masutatsu_oyama.jpg" }) {
+    homeBanner:
+      file(relativePath: { eq: "banner.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -4,14 +4,13 @@
 
 body {
   height: 97vh;
-  margin: 4px;
+  margin: .3rem;
 }
 
 .primary-question {
   text-align: center;
   font-size: 1.5em;
   background: aquamarine;
-  margin-bottom: 15px;
   font-family: cursive;
 }
 
@@ -32,9 +31,13 @@ body {
 .left-inset-image-content {
   width: 30%;
   float: left;
-  margin-right: 30px;
+  margin: 0 3rem 2rem 0;
 }
 
 .image-spacing-bottom {
-  margin-bottom: 5px;
+  margin: 0 0 1vh 0;
+}
+
+.home-banner-image-content {
+  margin: 2rem 2rem 4rem 2rem;
 }
