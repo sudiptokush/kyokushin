@@ -1,4 +1,4 @@
-// .content-container {
+// 
 
 // }
 
@@ -14,22 +14,32 @@ body {
   background: aquamarine;
 }
 
-.answer-content {
-  text-align: justify;
-  font-size: 1.1em;
-  color: #0c0c3e;
-}
 
-.body-content {
-  text-align: justify;
-  font-size: 1.1em;
-  color: #0c0c3e;
-}
+.content-container {
 
-.left-inset-image-content {
-  width: 30%;
-  float: left;
-  margin: 0 3rem 2rem 0;
+    .body-content {
+      text-align: justify;
+      font-size: 1.1em;
+      color: #0c0c3e;
+    }
+
+    .home-body-content{
+      text-align: justify;
+      font-size: 1.1em;
+      color: #0c0c3e;
+      padding: .4rem 0 0 0;
+    }
+
+    .left-inset-image-content {
+      width: 30%;
+      float: left;
+      margin: 0 2rem 2rem 0;
+    }
+    .home-inset-image-content {
+      width: 19%;
+      float: left;
+      margin: 0 3rem 2rem 0;
+    }
 }
 
 .image-spacing-bottom {

@@ -19,7 +19,15 @@ function ImageProcessor({ source }) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
+      },
+    prasenjitSaha:
+      file(relativePath: { eq: "prasenjit_saha.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
     homeBanner:
       file(relativePath: { eq: "banner.png" }) {
         childImageSharp {
