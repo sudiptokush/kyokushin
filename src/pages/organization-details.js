@@ -1,13 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
-import ImageProcessor from "../components/image-processor";
+import {organizationDetailsConfig} from "../assets/organization-details.config";
 
 const OrganizationDetails = (state) => {
-    console.log(state);
+    const selected = state.location.state.name;
     return <Layout>
-                <div>
-                    Organization Details
-                </div>
+                {organizationDetailsConfig[selected]()}
             </Layout>
 }
 
