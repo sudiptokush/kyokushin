@@ -35,6 +35,14 @@ function ImageProcessor({ source }) {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+    logo: 
+      file(relativePath: { eq: "logo.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
    }`
 

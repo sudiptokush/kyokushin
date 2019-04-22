@@ -7,10 +7,10 @@ import ImageProcessor from "../components/image-processor";
     function details(name){
       navigate("/organization-details/", {state: { name }});
     }
-    return <Layout>
-            <div className="tiles-container">
+    return <Layout imageSource="shokeiMatsui">
+            <div className="tiles-container-organization">
               <a onClick={ e => details('KanchoShokeiMatsui')}>
-                <div className="tiles">
+                <div className="wide-tile">
                   <div className="left-tile-image-content">
                     <ImageProcessor source="kanchoShokeiMatsui"></ImageProcessor>
                   </div>

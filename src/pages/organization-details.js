@@ -4,7 +4,7 @@ import {organizationDetailsConfig} from "../assets/organization-details.config";
 
 const OrganizationDetails = (state) => {
     const selected = state.location.state.name;
-    return <Layout>
+    return <Layout imageSource="shokeiMatsui">
                 {organizationDetailsConfig[selected]()}
             </Layout>
 }
