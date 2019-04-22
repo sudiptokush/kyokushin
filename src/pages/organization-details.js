@@ -2,10 +2,11 @@ import React from "react";
 import Layout from "../components/layout";
 import {organizationDetailsConfig} from "../assets/organization-details.config";
 
-const OrganizationDetails = (state) => {
-    const selected = state.location.state.name;
+const OrganizationDetails = ({location}) => {
+    let name;
+    location.state ? name = location.state.name : name = 'KanchoShokeiMatsui';
     return <Layout imageSource="shokeiMatsui">
-                {organizationDetailsConfig[selected]()}
+                {organizationDetailsConfig[name]()}
             </Layout>
 }
 
