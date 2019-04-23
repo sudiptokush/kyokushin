@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 function WidgetProcessor({ source }) {
   const widgetGql = graphql`{
   shokeiMatsui:
-  allFile(filter: {sourceInstanceName: {eq: "shokei_matsui"}}) {
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "shokei_matsui"}}) {
     edges {
       node {
         childImageSharp {
@@ -17,7 +17,7 @@ function WidgetProcessor({ source }) {
     }
   }
   masOyama:
-  allFile(filter: {sourceInstanceName: {eq: "mas-oyama"}}) {
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "mas-oyama"}}) {
     edges {
       node {
         childImageSharp {
