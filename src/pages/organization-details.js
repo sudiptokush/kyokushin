@@ -4,8 +4,8 @@ import {organizationDetailsConfig} from "../assets/organization-details.config";
 
 const OrganizationDetails = ({location}) => {
     let name;
-    location.state ? name = location.state.name : name = 'KanchoShokeiMatsui';
-    return <Layout imageSource="shokeiMatsui">
+    location.state ? name = location.state.name : name = 'shokeiMatsui';
+    return <Layout imageSource={name}>
                 {organizationDetailsConfig[name]()}
             </Layout>
 }

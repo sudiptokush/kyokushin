@@ -11,10 +11,10 @@ import ImageProcessor from "../components/image-processor";
     }
     return <Layout imageSource="shokeiMatsui">
             <div className="tiles-container-organization">
-              <a onClick={ e => details('KanchoShokeiMatsui')}>
+              <a onClick={ e => details('shokeiMatsui')}>
                 <div className="wide-tile">
                   <div className="left-tile-image-content">
-                    <ImageProcessor source="kanchoShokeiMatsui"></ImageProcessor>
+                    <ImageProcessor source="shokeiMatsui"></ImageProcessor>
                   </div>
                   <div className="right-tile-content">
                     <p>

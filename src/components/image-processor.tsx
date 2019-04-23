@@ -12,7 +12,7 @@ function ImageProcessor({ source }) {
           }
         }
       }
-    kanchoShokeiMatsui:
+      shokeiMatsui:
       file(relativePath: { eq: "kancho_shokei_matsui.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
