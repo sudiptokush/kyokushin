@@ -53,7 +53,7 @@ export default () => (
               </tr>
               <tr>
                 <td colspan="2">
-                    <button type="submit" class="mailButton">Register</button>
+                    <button type="submit" class="mailButton">Contact</button>
                 </td>
               </tr>
           </table>
