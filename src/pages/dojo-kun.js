@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import ImageProcessor from "../components/image-processor";
 
 export default () => (
-    <Layout>
+    <Layout imageSource="prasenjitSaha">
       <div className="dojo-kun">
         <div className="banner">
           <ImageProcessor source="dojoKunBanner"></ImageProcessor>

@@ -22,8 +22,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `shokei_matsui`,
-        path: `${__dirname}/src/images/shokei_matsui`,
+        name: `shokei-matsui`,
+        path: `${__dirname}/src/images/shokei-matsui`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `prasenjit-saha`,
+        path: `${__dirname}/src/images/prasenjit-saha`,
       },
     },
     {
@@ -50,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `home-carousel`,
+        name: `banner-images`,
         path: `${__dirname}/src/images/banner-images`,
       },
     },

@@ -14,11 +14,12 @@ export default () => (
             <li>Email: praseniko@yahoo.com</li>
             <li>Website: www.kyokushinkaikanindia.com</li>
           </ul>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.750815040541!2d88.39861759300794!3d22.58842131055852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ab2ef05531%3A0x6d7e5da4a6944350!2sKyokushin+Karate+Gurukul!5e0!3m2!1sen!2sin!4v1555671865675!5m2!1sen!2sin" allowfullscreen></iframe>
+          <iframe title="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.750815040541!2d88.39861759300794!3d22.58842131055852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ab2ef05531%3A0x6d7e5da4a6944350!2sKyokushin+Karate+Gurukul!5e0!3m2!1sen!2sin!4v1555671865675!5m2!1sen!2sin" allowfullscreen></iframe>
         </div>
         <div className="long-tile-contact-form">
         <div className="contact-form-header">Contact Us</div>
           <table class="contact-form">
+           <tbody>
               <tr>
                 <td>
                     <label>Name <span>*</span></label>
@@ -56,6 +57,7 @@ export default () => (
                     <button type="submit" class="mailButton">Contact</button>
                 </td>
               </tr>
+            </tbody>  
           </table>
         </div>
       </div>

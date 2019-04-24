@@ -35,7 +35,7 @@ function ImageProcessor({ source }) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
+      },
     dojoKunBanner:
       file(relativePath: { eq: "dojo-kun-banner.png" }) {
         childImageSharp {
@@ -43,8 +43,16 @@ function ImageProcessor({ source }) {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+    prasenjitSahaGurukul:
+      file(relativePath: {eq: "prasenjit_saha_gurukul.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
-   }`
+   }`;
 
   const data = useStaticQuery(imgGql);
   return <Img key={source} fluid={data[source].childImageSharp.fluid}></Img>;

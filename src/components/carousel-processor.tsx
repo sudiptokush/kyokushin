@@ -22,7 +22,7 @@ function CarouselProcessor({ source }){
     const data = useStaticQuery(carouselGql);
 
     const Temp = data.homeCarousel.edges.map((x: any, index: number) => {
-      return  <Carousel.Item>
+      return  <Carousel.Item key={index}>
                 <Img fluid={x.node.childImageSharp.fluid}></Img>
               </Carousel.Item>
             
