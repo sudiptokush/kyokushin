@@ -36,8 +36,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `banner`,
-        path: `${__dirname}/src/images/banner`,
+        name: `home-carousel`,
+        path: `${__dirname}/src/images/home-carousel`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `logo`,
+        path: `${__dirname}/src/images/logo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `home-carousel`,
+        path: `${__dirname}/src/images/banner-images`,
       },
     },
     `gatsby-transformer-sharp`,

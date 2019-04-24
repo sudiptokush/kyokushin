@@ -154,10 +154,14 @@ body {
   .page-title {
     font-size: 1.2em;
     text-align: center;
-    margin: .5rem;
+    margin: .3rem;
     font-weight: bold;
   }
-  li {
-    padding: .8rem;
+  ol {
+    text-align: center;
+    list-style: none;
+    li {
+      padding: .4rem;
+    }
   }
 }

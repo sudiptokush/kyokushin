@@ -28,18 +28,18 @@ function ImageProcessor({ source }) {
           }
         }
       },
-    homeBanner:
-      file(relativePath: { eq: "banner.png" }) {
+    logo: 
+      file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }
-      },
-    logo: 
-      file(relativePath: { eq: "logo.jpg" }) {
+      }
+    dojoKunBanner:
+      file(relativePath: { eq: "dojo-kun-banner.png" }) {
         childImageSharp {
-          fluid(maxWidth: 900) {
+          fluid(maxWidth: 1800) {
             ...GatsbyImageSharpFluid
           }
         }
