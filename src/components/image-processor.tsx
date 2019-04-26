@@ -56,23 +56,9 @@ function ImageProcessor({ source, type }) {
 
   const data = useStaticQuery(imgGql);
   
-  return type == "fluid" ? <Img key={source} fluid={data[source].childImageSharp.fluid}></Img> : <Img key={source} fixed={data[source].childImageSharp.fixed}></Img> 
+  return type == "fluid" ? 
+    <Img key={source} fluid={data[source].childImageSharp.fluid}></Img> : 
+    <Img key={source} fixed={data[source].childImageSharp.fixed}></Img> 
   
 }
 export default ImageProcessor;
-
-
-
-
-
-
-
-
-// logoBottom: 
-//     file(relativePath: { eq: "logo-bottom.jpg" }) {
-//       childImageSharp {
-//         fluid(maxHeight: 500) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     },

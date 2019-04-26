@@ -4,16 +4,17 @@
     'header header header'
     'left main right'
     'footer footer footer';
+    grid-template-columns: minmax(0px,150px) minmax(600px, auto) minmax(0,150px);
+    grid-template-rows: 6vh 91vh 3vh;
 
     .header {
         grid-area: header;
-        height:6vh;
-        margin: 0 0 .5rem 0;
     }
 
     .leftWidget {
         grid-area: left;
         justify-self: center;
+        padding: 2rem;
         .gatsby-image-wrapper{
             margin-top: 38%;
         }
@@ -21,25 +22,17 @@
     
     .rightWidget {
         grid-area: right; 
-        min-width: 200px; 
-        max-width: 15vw;
-        height: 89vh;
         overflow-x: auto;
     }
     
     .main {
         grid-area: main;
         padding: .5rem 1rem 1.5rem 1rem;
-        height: 86vh;
-        overflow-x: auto;
-        min-width:500px;
-        width: 66vw;
+        overflow-x: auto; 
     }
     
     .footer {
         grid-area: footer;
-        height: 3vh;
-        margin-top: .3rem;
         background: #343a40;
         color:white;
     }
