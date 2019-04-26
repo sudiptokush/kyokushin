@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Kyokushin`,
+    title: `Kyokushin Kai Kan India`,
     description: `Kyokushin is a style of stand-up, full contact karate, founded in 1964 by Korean-
     Japanese Masutatsu Oyama.`,
     author: `Kush Infotech`,

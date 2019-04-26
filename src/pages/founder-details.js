@@ -6,7 +6,7 @@ export default () => (
     <Layout imageSource="masOyama">
         <div className="content-container">
             <div className="left-inset-image-content">
-                <ImageProcessor source="masutatsuOyama"></ImageProcessor>
+                <ImageProcessor source="masutatsuOyama" type="fluid"></ImageProcessor>
             </div>
             <div className="body-content">
                 <p>

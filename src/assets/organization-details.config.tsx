@@ -10,7 +10,7 @@ export const organizationDetailsConfig = {
 
 const shokeiMatsui = <div className="content-container">
                             <div className="left-inset-image-content">
-                                <ImageProcessor source="shokeiMatsui"></ImageProcessor>
+                                <ImageProcessor source="shokeiMatsui" type="fluid"></ImageProcessor>
                             </div>
                             <div className="body-content">
                                 <p>

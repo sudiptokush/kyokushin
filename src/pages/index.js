@@ -9,24 +9,23 @@ export default () => (
         <CarouselProcessor></CarouselProcessor>
     </div>
     <div className="primary-question">
-      What is Kyokushin ?
+      Kyokushin: <span className="highlight">The Ultimate Truth</span>
     </div>
     <div className="content-container">
         <div className="home-inset-image-content">
-            <ImageProcessor source="prasenjitSaha"></ImageProcessor>
+            <ImageProcessor source="masutatsuOyamaHome" type="fluid"></ImageProcessor>
         </div>
         <div className="home-body-content">
-          <p>
-            Kyokushin is a style of stand-up, full contact karate, founded in 1964 by Korean-
-            Japanese Masutatsu Oyama. &quot;Kyokushin&quot; is Japanese for &quot;the ultimate truth&quot;. It is
-            rooted in a philosophy of self-improvement, discipline and hard training. Its full
-            contact style has international appeal.
-            Kyokushin (極真) is a style of stand-up, full contact karate, founded in 1964 by
-            Korean-Japanese Masutatsu Oyama (大山倍達 Ōyama Masutatsu). &quot;Kyokushin&quot; is
-            Japanese for &quot;the ultimate truth&quot;. It is rooted in a philosophy of self-improvement,
-            discipline and hard training. Its full contact style has international appeal
-            (practitioners have over the last 40+ years numbered more than 12 million).
-          </p>
+          <span className="quotes">
+            <p>
+              Although it is important to study and train for skill in techniques, for the man who wishes to 
+              truly accomplish the way of Budo, it is more important to make his whole life in training and 
+              therefore not aiming for skill and strength alone, but also for spiritual attainment.  
+            </p>
+            <p className="quoted-by">
+              Masutatsu Oyama
+            </p>
+          </span>
         </div>     
     </div>
   </Layout>

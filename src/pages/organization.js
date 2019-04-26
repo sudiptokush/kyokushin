@@ -14,11 +14,11 @@ import ImageProcessor from "../components/image-processor";
               <a onClick={ e => details('shokeiMatsui')}>
                 <div className="wide-tile">
                   <div className="left-tile-image-content">
-                    <ImageProcessor source="shokeiMatsui"></ImageProcessor>
+                    <ImageProcessor source="shokeiMatsui" type="fluid"></ImageProcessor>
                   </div>
                   <div className="right-tile-content">
                     <p>
-                      Kancho Shokei Matsui (IKO, Kyokushin kai kan)
+                      <strong> Kancho Shokei Matsui (IKO, Kyokushin kai kan) </strong>
                     </p>
                     <p>
                       Shokei (Akiyoshi) Matsui was born in Bunkyo-ku, Tokyo, on 15 th January
@@ -33,7 +33,7 @@ import ImageProcessor from "../components/image-processor";
                   </div>
                 </div>
               </a>
-            </div>    
+            </div> 
            </Layout>
   }
 

@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-function ImageProcessor({ source }) {
+function ImageProcessor({ source, type }) {
   const imgGql = graphql`{
     masutatsuOyama:
       file(relativePath: { eq: "masutatsu_oyama.jpg" }) {
@@ -20,8 +20,8 @@ function ImageProcessor({ source }) {
           }
         }
       },
-    prasenjitSaha:
-      file(relativePath: { eq: "prasenjit_saha.jpg" }) {
+      masutatsuOyamaHome:
+      file(relativePath: { eq: "masutatsu_oyama_home.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -31,8 +31,8 @@ function ImageProcessor({ source }) {
     logo: 
       file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 900) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
           }
         }
       },
@@ -55,7 +55,9 @@ function ImageProcessor({ source }) {
    }`;
 
   const data = useStaticQuery(imgGql);
-  return <Img key={source} fluid={data[source].childImageSharp.fluid}></Img>;
+  
+  return type == "fluid" ? <Img key={source} fluid={data[source].childImageSharp.fluid}></Img> : <Img key={source} fixed={data[source].childImageSharp.fixed}></Img> 
+  
 }
 export default ImageProcessor;
 
@@ -66,37 +68,11 @@ export default ImageProcessor;
 
 
 
-// import React from "react"
-// import { StaticQuery, graphql } from "gatsby"
-// import Img from "gatsby-image"
-
-// /*
-//  * This component is built using `gatsby-image` to automatically serve optimized
-//  * images with lazy loading and reduced file sizes. The image is loaded using a
-//  * `StaticQuery`, which allows us to load the image from directly within this
-//  * component, rather than having to pass the image data down from pages.
-//  *
-//  * For more information, see the docs:
-//  * - `gatsby-image`: https://gatsby.dev/gatsby-image
-//  * - `StaticQuery`: https://gatsby.dev/staticquery
-//  */
-
-// const Image = () => (
-//   <StaticQuery
-//     query={graphql`{
-//       masutatsuOyama:
-//         query {
-//           placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-//             childImageSharp {
-//               fluid(maxWidth: 300) {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
+// logoBottom: 
+//     file(relativePath: { eq: "logo-bottom.jpg" }) {
+//       childImageSharp {
+//         fluid(maxHeight: 500) {
+//           ...GatsbyImageSharpFluid
 //         }
 //       }
-//     `}
-//     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-//   />
-// )
-// export default Image
+//     },

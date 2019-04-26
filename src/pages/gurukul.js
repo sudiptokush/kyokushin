@@ -6,7 +6,7 @@ export default () => (
     <Layout imageSource="prasenjitSaha">
       <div className="content-container">
         <div className="gurukul-inset-image-content">
-            <ImageProcessor source="prasenjitSahaGurukul"></ImageProcessor>
+            <ImageProcessor source="prasenjitSahaGurukul" type="fluid"></ImageProcessor>
         </div>
         <div className="body-content">
           <p>

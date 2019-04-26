@@ -8,6 +8,9 @@ body {
   text-align: center;
   font-size: 1.5em;
   background: aquamarine;
+  .highlight {
+    color:red;
+  }
 }
 
 
@@ -16,7 +19,14 @@ body {
     .home-body-content{
       text-align: justify;
       font-size: 1.1em;
-      padding: .4rem 0 0 0;
+      padding: 4rem 0 0 0;
+      .quotes {
+        font-size: .8em;
+        font-weight: bold;
+        .quoted-by {
+          float: right;
+        }
+      }
     }
     .left-inset-image-content {
       width: 30%;
@@ -24,9 +34,9 @@ body {
       margin: 0 2rem 1rem 0;
     }
     .home-inset-image-content {
-      width: 19%;
+      width: 25%;
       float: left;
-      margin: 0 3rem 2rem 0;
+      margin: 0 2rem 2rem 0;
     }
     .gurukul-inset-image-content {
       width: 28%;
@@ -40,7 +50,7 @@ body {
 }
 
 .home-banner-image-content {
-  margin: 2rem 2rem 4rem 2rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .tiles-container-organization {
@@ -169,4 +179,14 @@ body {
       padding: .4rem;
     }
   }
+}
+
+.tab-content{
+  padding: 1rem;
+  border: 1px solid #ded6d6;
+}
+
+.event-table {
+  border-collapse: separate; 
+  border-spacing: 2rem;
 }

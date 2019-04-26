@@ -1,9 +1,9 @@
 .container {
     display: grid;
     grid-template-areas:
-    'header header header header'
-    'left main main right'
-    'footer footer footer footer';
+    'header header header'
+    'left main right'
+    'footer footer footer';
 
     .header {
         grid-area: header;
@@ -13,9 +13,10 @@
 
     .leftWidget {
         grid-area: left;
-        min-width: 200px; 
-        max-width: 12vw;
         justify-self: center;
+        .gatsby-image-wrapper{
+            margin-top: 38%;
+        }
     }
     
     .rightWidget {

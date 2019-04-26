@@ -6,7 +6,7 @@ export default () => (
     <Layout imageSource="prasenjitSaha">
       <div className="dojo-kun">
         <div className="banner">
-          <ImageProcessor source="dojoKunBanner"></ImageProcessor>
+          <ImageProcessor source="dojoKunBanner" type="fluid"></ImageProcessor>
         </div>
         <div className="page-title"> DOJO KUN </div>
         <ol>
@@ -18,7 +18,7 @@ export default () => (
 
           <li> We will observe the rules of courtesy, respect our superiors, and refrain from violence. </li>
 
-          <li> We will follow our religious principles, and never forget the true virtue of humility. </li>
+          <li> We will follow our Gods, and never forget the true virtue of humility. </li>
 
           <li> We will look upwards to wisdom and strength, not seeking other desires. </li>
 

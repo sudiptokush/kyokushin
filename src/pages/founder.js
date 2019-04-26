@@ -15,11 +15,11 @@ import ImageProcessor from "../components/image-processor";
               <a onClick={ e => founderDetails()}>
                 <div className="wide-tile-founder">
                   <div className="left-tile-image-content">
-                    <ImageProcessor source="masutatsuOyama"></ImageProcessor>
+                    <ImageProcessor source="masutatsuOyama" type="fluid"></ImageProcessor>
                   </div>
                   <div className="right-tile-content">
                     <p>
-                        Masutatsu Oyama
+                       <strong> Masutatsu Oyama </strong>
                     </p>
                     <p>
                         The tiny village of Wa-Ryongri is not far from the town of Kinje, close to Gunsan in
