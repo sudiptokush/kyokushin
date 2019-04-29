@@ -28,15 +28,31 @@ function ImageProcessor({ source, type }) {
           }
         }
       },
-    logo: 
-      file(relativePath: { eq: "logo.jpg" }) {
+      logoTop: 
+      file(relativePath: { eq: "logo-top.png" }) {
         childImageSharp {
           fixed(width: 150) {
             ...GatsbyImageSharpFixed
           }
         }
       },
-    dojoKunBanner:
+      logoMiddle: 
+      file(relativePath: { eq: "logo-middle.jpg" }) {
+        childImageSharp {
+          fixed(width: 130) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      },
+      logoBottom: 
+      file(relativePath: { eq: "logo-bottom.png" }) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      },
+      dojoKunBanner:
       file(relativePath: { eq: "dojo-kun-banner.png" }) {
         childImageSharp {
           fluid(maxWidth: 1800) {
@@ -44,7 +60,7 @@ function ImageProcessor({ source, type }) {
           }
         }
       },
-    prasenjitSahaGurukul:
+      prasenjitSahaGurukul:
       file(relativePath: {eq: "prasenjit_saha_gurukul.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 300) {

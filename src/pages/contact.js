@@ -7,9 +7,8 @@ export default () => (
         <div className="long-tile-contact-map">
           <ul>
             <li>Tel: +91-33-23373259 (home)   </li>
-            <li>Tel: +91-33-40044635 (office)</li>
-            <li>Mob: +91-98-30025132 </li>
-            <li>Fax: +91-33-28662055  </li>
+            <li>Mob: +91-9830025132 </li>
+            <li>Mob: +91-8902178696 </li>
             <li>Address: BA - 175, Sector 1, Salt Lake City, Kolkata 700 064</li>
             <li>Email: praseniko@yahoo.com</li>
             <li>Website: www.kyokushinkaikanindia.com</li>

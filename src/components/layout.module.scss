@@ -14,9 +14,12 @@
     .leftWidget {
         grid-area: left;
         justify-self: center;
-        padding: 2rem;
+        padding: 0 2rem 2rem 2rem;
         .gatsby-image-wrapper{
             margin-top: 38%;
+        }
+        .ichigeki {
+            margin: 0 0 2rem 0;
         }
     }
     
