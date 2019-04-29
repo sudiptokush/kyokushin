@@ -4,7 +4,7 @@
     'header header header'
     'left main right'
     'footer footer footer';
-    grid-template-columns: minmax(0px,12vw) minmax(600px, auto) minmax(0,15vw);
+    grid-template-columns: minmax(150px,12vw) minmax(600px,auto) minmax(200px,15vw);
     grid-template-rows: 6vh 91vh 3vh;
 
     .header {
