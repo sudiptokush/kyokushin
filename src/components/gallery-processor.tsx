@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-import galleryJson from '../images/gallery/gallery.json';
+import galleryJson from '../assets/gallery.json';
 
 function GalleryProcessor() {
     const gql = graphql`{
@@ -25,10 +25,11 @@ function GalleryProcessor() {
         allImages[x.node.name] = x.node.childImageSharp.fixed;
     });
     const temp = galleryJson.map((j: any, index: number) => {
-        return <div key={index}>
+        return <div key={index} className="image-tile">
             <Img fixed={allImages[j.image]}></Img>
+            <div className="desc">{j.descr}</div>
         </div>
     });
-    return <div>{temp}</div>
+    return <div className="gallery-container">{temp}</div>
 }
 export default GalleryProcessor;
