@@ -11,7 +11,7 @@ function GalleryProcessor() {
             node {
               name
               childImageSharp {
-                fixed(width:300, height:300) {
+                fixed(width:300) {
                   ...GatsbyImageSharpFixed
                 }
               }
