@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default () => (
-    <Layout>
+const Contact =  () => {
+    return <Layout>
       <div className="tiles-container-contact">
         <div className="long-tile-contact-map">
           <ul>
@@ -61,4 +61,6 @@ export default () => (
         </div>
       </div>
     </Layout>
-  )
+}
+
+export default Contact;
