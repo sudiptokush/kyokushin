@@ -1,12 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 
 const Contact =  () => {
+    const [name, setName] = useState("");
+    const [mobile, setMobile] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const sendEmail = (evt) => {
+      evt.preventDefault();
+      alert(`${name} /  ${mobile} / ${email} / ${message}`);
+    }
     return <Layout>
       <div className="tiles-container-contact">
         <div className="long-tile-contact-map">
           <ul>
-            <li>Tel: +91-33-23373259 (home)   </li>
+            <li>Tel: +91-33-23373259 (home)</li>
             <li>Mob: +91-9830025132 </li>
             <li>Mob: +91-8902178696 </li>
             <li>Address: BA - 175, Sector 1, Salt Lake City, Kolkata 700 064</li>
@@ -17,6 +25,7 @@ const Contact =  () => {
         </div>
         <div className="long-tile-contact-form">
         <div className="contact-form-header">Contact Us</div>
+        <form onSubmit={sendEmail}>
           <table className="contact-form">
            <tbody>
               <tr>
@@ -24,7 +33,7 @@ const Contact =  () => {
                     <label>Name <span>*</span></label>
                 </td>
                 <td className="entryColumn">
-                    <input type="text" required name="name" />
+                    <input type="text" required name="name" value={name} onChange={e => setName(e.target.value)}/>
                 </td>
               </tr>
               <tr>
@@ -32,7 +41,7 @@ const Contact =  () => {
                     <label>Mobile <span>*</span></label>
                 </td>
                 <td className="entryColumn">
-                    <input type="text" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" />
+                    <input type="text" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" value={mobile} onChange={e => setMobile(e.target.value)}/>
                 </td>
               </tr>
               <tr>
@@ -40,7 +49,7 @@ const Contact =  () => {
                     <label>Email <span>*</span></label>
                 </td>
                 <td className="entryColumn">
-                    <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" />
+                    <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                 </td>
               </tr>
               <tr>
@@ -48,7 +57,7 @@ const Contact =  () => {
                     <label>Message</label>
                 </td>
                 <td>
-                    <textarea rows="6" name="message"></textarea>
+                    <textarea rows="6" name="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 </td>
               </tr>
               <tr>
@@ -58,6 +67,7 @@ const Contact =  () => {
               </tr>
             </tbody>  
           </table>
+        </form>
         </div>
       </div>
     </Layout>
