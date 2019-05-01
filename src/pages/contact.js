@@ -1,16 +1,37 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
+import * as emailjs from 'emailjs-com';
 
 const Contact =  () => {
-    const [name, setName] = useState("");
+    
+  const [name, setName] = useState("");
     const [mobile, setMobile] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    
+    
     const sendEmail = (evt) => {
       evt.preventDefault();
-      //alert(`${name} /  ${mobile} / ${email} / ${message}`);
-      alert("Email service is down. Please use the provided numbers to contact us. Sorry for the inconvinience");
+
+      var template_params = {
+        "name": name,
+        "mobile": mobile,
+        "email": email,
+        "message": message
+     }
+     
+     var service_id = "default_service";
+     var template_id = "kyokushin";
+     var user_id = 'user_0Duap72E6rc3HeaQGPtKc';
+     emailjs.send(service_id, template_id, template_params, user_id)
+      .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function(err) {
+          console.log('FAILED...', err);
+        });
     }
+
+
     return <Layout>
       <div className="tiles-container-contact">
         <div className="long-tile-contact-map">
