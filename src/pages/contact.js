@@ -9,7 +9,7 @@ const Contact =  () => {
     const sendEmail = (evt) => {
       evt.preventDefault();
       //alert(`${name} /  ${mobile} / ${email} / ${message}`);
-      alert("Email service is down. Please contact us using the provided numbers. Sorry for the inconvinience");
+      alert("Email service is down. Please use the provided numbers to contact us. Sorry for the inconvinience");
     }
     return <Layout>
       <div className="tiles-container-contact">
