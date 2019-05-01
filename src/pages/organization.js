@@ -12,7 +12,7 @@ import seoJson from "../assets/seo.json";
       });
     }
     return <Layout imageSource="shokeiMatsui">
-            <SEO title="Kyokushin Home" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+            <SEO title="Kyokushin Organization" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
             <div className="organization">
               <a onClick={ e => details('shokeiMatsui')}>
                 <div className="wide-tile">

@@ -6,7 +6,7 @@ import seoJson from "../assets/seo.json";
 
 export default () => (
     <Layout imageSource="prasenjitSaha">
-      <SEO title="Kyokushin Mas Oyama" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+      <SEO title="Kyokushin Gurukul" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
       <div className="gurukul">
         <div className="left-inset-image-content">
             <ImageProcessor source="prasenjitSahaGurukul" type="fluid"></ImageProcessor>

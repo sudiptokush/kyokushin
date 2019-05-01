@@ -7,7 +7,7 @@ import seoJson from "../assets/seo.json";
 
 export default () => (
     <Layout>
-      <SEO title="Kyokushin Mas Oyama" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+      <SEO title="Kyokushin Events" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
       <div class="events">
         <Tabs defaultActiveKey="international" id="event-tab">
           <Tab eventKey="international" title="International">

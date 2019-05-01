@@ -8,7 +8,7 @@ const OrganizationDetails = ({location}) => {
     let name;
     location.state ? name = location.state.name : name = 'shokeiMatsui';
     return <Layout imageSource={name}>
-            <SEO title="Kyokushin Home" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+            <SEO title="Kyokushin Kancho Shokei Matsui" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
                 {organizationDetailsConfig[name]()}
             </Layout>
 }
