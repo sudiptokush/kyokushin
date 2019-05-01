@@ -30,6 +30,6 @@ function GalleryProcessor() {
             <div className="desc">{j.descr}</div>
         </div>
     });
-    return <div className="gallery-container">{temp}</div>
+    return <div className="gallery">{temp}</div>
 }
 export default GalleryProcessor;

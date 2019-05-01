@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import * as emailjs from 'emailjs-com';
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
 const Contact =  () => {
     
@@ -41,8 +43,9 @@ const Contact =  () => {
 
 
     return <Layout>
-      <div className="tiles-container-contact">
-        <div className="long-tile-contact-map">
+      <SEO title="Kyokushin Contact" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+      <div className="contact">
+        <div className="long-tile-map">
           <ul>
             <li>Tel: +91-33-23373259 (home)</li>
             <li>Mob: +91-9830025132 </li>
@@ -53,8 +56,8 @@ const Contact =  () => {
           </ul>
           <iframe title="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.750815040541!2d88.39861759300794!3d22.58842131055852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ab2ef05531%3A0x6d7e5da4a6944350!2sKyokushin+Karate+Gurukul!5e0!3m2!1sen!2sin!4v1555671865675!5m2!1sen!2sin" allowFullScreen></iframe>
         </div>
-        <div className="long-tile-contact-form">
-        <div className="contact-form-header">Contact Us</div>
+        <div className="long-tile-form">
+        <div className="form-header">Contact Us</div>
         <form onSubmit={sendEmail}>
           <table className="contact-form">
            <tbody>
@@ -62,7 +65,7 @@ const Contact =  () => {
                 <td>
                     <label>Name <span>*</span></label>
                 </td>
-                <td className="entryColumn">
+                <td>
                     <input type="text" required name="name" value={name} onChange={e => setName(e.target.value)}/>
                 </td>
               </tr>
@@ -70,7 +73,7 @@ const Contact =  () => {
                 <td>
                     <label>Mobile <span>*</span></label>
                 </td>
-                <td className="entryColumn">
+                <td>
                     <input type="text" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" value={mobile} onChange={e => setMobile(e.target.value)}/>
                 </td>
               </tr>
@@ -78,7 +81,7 @@ const Contact =  () => {
                 <td>
                     <label>Email <span>*</span></label>
                 </td>
-                <td className="entryColumn">
+                <td>
                     <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                 </td>
               </tr>

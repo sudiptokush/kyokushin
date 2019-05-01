@@ -2,163 +2,168 @@ import React from "react";
 import Layout from "../components/layout";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
 export default () => (
     <Layout>
-      <Tabs defaultActiveKey="international" id="event-tab">
-        <Tab eventKey="international" title="International">
-            <table className="event-table">
-              <tbody>
-                <tr>
-                  <td>1/4~6</td>
-                  <td>IKO Honbu Winter Camp &amp; Dan Test</td>
-                  <td>Mitsumine, Japan</td>
-                </tr>
-                <tr>
-                  <td>1/5~9</td>
-                  <td>Romania Winter Camp</td>
-                  <td>Sonaia, Romania</td>
-                </tr>
-                <tr>
-                  <td>1/11~13</td>
-                  <td>Czech Winter Camp Bila</td>
-                  <td>Mezividi, Czech</td>
-                </tr>
-                <tr>
-                  <td>1/11~13</td>
-                  <td>Swiss Winter Camp</td>
-                  <td>Lausanne, Switzerland</td>
-                </tr>
-                <tr>
-                  <td>1/11~15</td>
-                  <td>Russia Winter Camp</td>
-                  <td>Moscow, Russia</td>
-                </tr>
-                <tr>
-                  <td>1/27</td>
-                  <td>US Weight Category Karate Championships</td>
-                  <td>Los Angeles, USA</td>
-                </tr>
-                <tr>
-                  <td>2/1~3</td>
-                  <td>Turkey Winter Camp</td>
-                  <td>Bursa, Turkey</td>
-                </tr> 
-                <tr>
-                  <td>2/7~10</td>
-                  <td>Bulgaria Winter Camp</td>
-                  <td>Kranevo, Bulgaria</td>
-                </tr>
-                <tr>
-                  <td>2/22~24</td>
-                  <td>Russia Open Junior Cup</td>
-                  <td>Moscow, Russia</td>
-                </tr> 
-                <tr>
-                  <td>3/1~3</td>
-                  <td>Polish Fighters Camp</td>
-                  <td>Zakopane, Poland</td>
-                </tr>
-                <tr>
-                  <td>3/2</td>
-                  <td>Spanish Open Karate Championships</td>
-                  <td>Badalona, Spain</td>
-                </tr>   
-                <tr>
-                  <td>3/22~23</td>
-                  <td>The 7th Balkan Championships</td>
-                  <td>Volos, Greece</td>
-                </tr>
-                <tr>
-                  <td>4/20~21</td>
-                  <td>
-                    International Karate Friendship                                     
-                    The 36th All Japan Weight Category Karate Championships 
-                    (International Goodwill Men's Weight Category Karate Championships) 
-                    The Women's World Weight Category Karate Championships
-                  </td>
-                  <td>Tokyo, Japan</td>
-                </tr>   
-                <tr>
-                  <td>4/22~23</td>
-                  <td>International Training Camp</td>
-                  <td>Mitsumine, Japan</td>
-                </tr>
-                <tr>
-                  <td>4/23~26</td>
-                  <td>Intensive Training &amp; Ichigeki Course</td>
-                  <td>Tokyo, Japan</td>
-                </tr>    
-                <tr>
-                  <td>5/18~19</td>
-                  <td>European Weight Category Karate Championships</td>
-                  <td>Wroclaw, Poland</td>
-                </tr>
-                <tr>
-                  <td>6/7~9</td>
-                  <td>Spain Summer Camp</td>
-                  <td>Barcelona, Spain</td>
-                </tr> 
-                <tr>
-                  <td>6/22</td>
-                  <td>All American Open Karate Championships</td>
-                  <td>New York, USA</td>
-                </tr>
-                <tr>
-                  <td>6/29~7/3</td>
-                  <td>Romania Summer Camp Eforie</td>
-                  <td>Sud, Romania</td>
-                </tr>  
-                <tr>
-                  <td>7/4~6</td>
-                  <td>Greece Summer Camp</td>
-                  <td>Skiathos, Greece</td>
-                </tr>
-                <tr>
-                  <td>7/19~21</td>
-                  <td>IKO Honbu Summer Camp</td>
-                  <td>Yamanashi, Japan</td>
-                </tr>  
-                <tr>
-                  <td>7/27</td>
-                  <td>All Asia Weight Category Karate Championships</td>
-                  <td>Shanghai, China</td>
-                </tr>
-                <tr>
-                  <td>8/15~18</td>
-                  <td>Poland Summer Camp</td>
-                  <td>Lublin, Poland</td>
-                </tr>  
-                <tr>
-                  <td>11/22~24</td>
-                  <td>
-                    The 12th World Open Karate Championships 
-                    World Youth Karate Championships
-                  </td>
-                  <td>Tokyo, Japan</td>
-                </tr>
-                <tr>
-                  <td>11/25~26</td>
-                  <td>International Training Camp</td>
-                  <td>Mitsumine, Japan</td>
-                </tr> 
-                <tr>
-                  <td>11/26~29</td>
-                  <td>Intensive Training &amp; Ichigeki Course</td>
-                  <td>Tokyo, Japan</td>
-                </tr>
-                <tr>
-                  <td>12/7</td>
-                  <td>European Open Karate Championships</td>
-                  <td>Minsk, Belarus</td>
-                </tr>  
-              </tbody>
-            </table>
-        </Tab>
-        <Tab eventKey="national" title="National">
-          
-        </Tab>
-      </Tabs>
+      <SEO title="Kyokushin Mas Oyama" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+      <div class="events">
+        <Tabs defaultActiveKey="international" id="event-tab">
+          <Tab eventKey="international" title="International">
+              <table className="event-table">
+                <tbody>
+                  <tr>
+                    <td>1/4~6</td>
+                    <td>IKO Honbu Winter Camp &amp; Dan Test</td>
+                    <td>Mitsumine, Japan</td>
+                  </tr>
+                  <tr>
+                    <td>1/5~9</td>
+                    <td>Romania Winter Camp</td>
+                    <td>Sonaia, Romania</td>
+                  </tr>
+                  <tr>
+                    <td>1/11~13</td>
+                    <td>Czech Winter Camp Bila</td>
+                    <td>Mezividi, Czech</td>
+                  </tr>
+                  <tr>
+                    <td>1/11~13</td>
+                    <td>Swiss Winter Camp</td>
+                    <td>Lausanne, Switzerland</td>
+                  </tr>
+                  <tr>
+                    <td>1/11~15</td>
+                    <td>Russia Winter Camp</td>
+                    <td>Moscow, Russia</td>
+                  </tr>
+                  <tr>
+                    <td>1/27</td>
+                    <td>US Weight Category Karate Championships</td>
+                    <td>Los Angeles, USA</td>
+                  </tr>
+                  <tr>
+                    <td>2/1~3</td>
+                    <td>Turkey Winter Camp</td>
+                    <td>Bursa, Turkey</td>
+                  </tr> 
+                  <tr>
+                    <td>2/7~10</td>
+                    <td>Bulgaria Winter Camp</td>
+                    <td>Kranevo, Bulgaria</td>
+                  </tr>
+                  <tr>
+                    <td>2/22~24</td>
+                    <td>Russia Open Junior Cup</td>
+                    <td>Moscow, Russia</td>
+                  </tr> 
+                  <tr>
+                    <td>3/1~3</td>
+                    <td>Polish Fighters Camp</td>
+                    <td>Zakopane, Poland</td>
+                  </tr>
+                  <tr>
+                    <td>3/2</td>
+                    <td>Spanish Open Karate Championships</td>
+                    <td>Badalona, Spain</td>
+                  </tr>   
+                  <tr>
+                    <td>3/22~23</td>
+                    <td>The 7th Balkan Championships</td>
+                    <td>Volos, Greece</td>
+                  </tr>
+                  <tr>
+                    <td>4/20~21</td>
+                    <td>
+                      International Karate Friendship                                     
+                      The 36th All Japan Weight Category Karate Championships 
+                      (International Goodwill Men's Weight Category Karate Championships) 
+                      The Women's World Weight Category Karate Championships
+                    </td>
+                    <td>Tokyo, Japan</td>
+                  </tr>   
+                  <tr>
+                    <td>4/22~23</td>
+                    <td>International Training Camp</td>
+                    <td>Mitsumine, Japan</td>
+                  </tr>
+                  <tr>
+                    <td>4/23~26</td>
+                    <td>Intensive Training &amp; Ichigeki Course</td>
+                    <td>Tokyo, Japan</td>
+                  </tr>    
+                  <tr>
+                    <td>5/18~19</td>
+                    <td>European Weight Category Karate Championships</td>
+                    <td>Wroclaw, Poland</td>
+                  </tr>
+                  <tr>
+                    <td>6/7~9</td>
+                    <td>Spain Summer Camp</td>
+                    <td>Barcelona, Spain</td>
+                  </tr> 
+                  <tr>
+                    <td>6/22</td>
+                    <td>All American Open Karate Championships</td>
+                    <td>New York, USA</td>
+                  </tr>
+                  <tr>
+                    <td>6/29~7/3</td>
+                    <td>Romania Summer Camp Eforie</td>
+                    <td>Sud, Romania</td>
+                  </tr>  
+                  <tr>
+                    <td>7/4~6</td>
+                    <td>Greece Summer Camp</td>
+                    <td>Skiathos, Greece</td>
+                  </tr>
+                  <tr>
+                    <td>7/19~21</td>
+                    <td>IKO Honbu Summer Camp</td>
+                    <td>Yamanashi, Japan</td>
+                  </tr>  
+                  <tr>
+                    <td>7/27</td>
+                    <td>All Asia Weight Category Karate Championships</td>
+                    <td>Shanghai, China</td>
+                  </tr>
+                  <tr>
+                    <td>8/15~18</td>
+                    <td>Poland Summer Camp</td>
+                    <td>Lublin, Poland</td>
+                  </tr>  
+                  <tr>
+                    <td>11/22~24</td>
+                    <td>
+                      The 12th World Open Karate Championships 
+                      World Youth Karate Championships
+                    </td>
+                    <td>Tokyo, Japan</td>
+                  </tr>
+                  <tr>
+                    <td>11/25~26</td>
+                    <td>International Training Camp</td>
+                    <td>Mitsumine, Japan</td>
+                  </tr> 
+                  <tr>
+                    <td>11/26~29</td>
+                    <td>Intensive Training &amp; Ichigeki Course</td>
+                    <td>Tokyo, Japan</td>
+                  </tr>
+                  <tr>
+                    <td>12/7</td>
+                    <td>European Open Karate Championships</td>
+                    <td>Minsk, Belarus</td>
+                  </tr>  
+                </tbody>
+              </table>
+          </Tab>
+          <Tab eventKey="national" title="National">
+            
+          </Tab>
+        </Tabs>
+      </div>
     </Layout>
   )
 

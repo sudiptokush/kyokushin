@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { navigate } from "gatsby"
 import ImageProcessor from "../components/image-processor";
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
   const Organization = () => {
     function details(name){
@@ -10,7 +12,8 @@ import ImageProcessor from "../components/image-processor";
       });
     }
     return <Layout imageSource="shokeiMatsui">
-            <div className="tiles-container-organization">
+            <SEO title="Kyokushin Home" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+            <div className="organization">
               <a onClick={ e => details('shokeiMatsui')}>
                 <div className="wide-tile">
                   <div className="left-tile-image-content">

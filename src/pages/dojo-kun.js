@@ -1,9 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import ImageProcessor from "../components/image-processor";
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
 export default () => (
     <Layout imageSource="prasenjitSaha">
+      <SEO title="Kyokushin Dojo" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
       <div className="dojo-kun">
         <div className="banner">
           <ImageProcessor source="dojoKunBanner" type="fluid"></ImageProcessor>

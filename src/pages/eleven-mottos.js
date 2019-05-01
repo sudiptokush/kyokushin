@@ -1,8 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
 export default () => (
     <Layout imageSource="masOyama">
+        <SEO title="Kyokushin Mas Oyama" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
         <div className="eleven-mottos">
             <div className="page-title"> ELEVEN MOTTOS </div>
             <ol>

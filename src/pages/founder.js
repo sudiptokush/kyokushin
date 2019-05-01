@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { navigate } from "gatsby"
 import ImageProcessor from "../components/image-processor";
+import SEO from "../components/seo";
+import seoJson from "../assets/seo.json";
 
   const Organization = () => {
     function founderDetails(){
@@ -11,9 +13,11 @@ import ImageProcessor from "../components/image-processor";
       navigate("/eleven-mottos/");
     }
     return <Layout imageSource="masOyama">
-            <div className="tiles-container-founder">
+            <SEO title="Kyokushin Mas Oyama" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+            <div class="founder">
+              <div className="mas-oyama">
               <a onClick={ e => founderDetails()}>
-                <div className="wide-tile-founder">
+                <div className="wide-tile">
                   <div className="left-tile-image-content">
                     <ImageProcessor source="masutatsuOyama" type="fluid"></ImageProcessor>
                   </div>
@@ -40,13 +44,14 @@ import ImageProcessor from "../components/image-processor";
                 </div>
               </a>
             </div>   
-            <div className="tiles-container-eleven-mottos">
+              <div className="eleven-mottos">
                 <a onClick={ e => elevenMottos()}>
-                    <div className="wide-tile-eleven-mottos">
+                    <div className="wide-tile">
                         ELEVEN MOTTOS OF MAS OYAMA
                     </div>
                 </a>
               </div> 
+            </div>
            </Layout>
   }
 
