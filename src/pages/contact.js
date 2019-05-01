@@ -9,26 +9,34 @@ const Contact =  () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     
+
+    const resetForm = () => {
+      setName("");
+      setMobile("");
+      setEmail("");
+      setMessage("");
+    }
     
     const sendEmail = (evt) => {
       evt.preventDefault();
-
-      var template_params = {
+      
+      const template_params = {
         "name": name,
         "mobile": mobile,
         "email": email,
         "message": message
-     }
+      }
      
-     var service_id = "default_service";
-     var template_id = "kyokushin";
-     var user_id = 'user_0Duap72E6rc3HeaQGPtKc';
-     emailjs.send(service_id, template_id, template_params, user_id)
-      .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-        }, function(err) {
-          console.log('FAILED...', err);
-        });
+      const service_id = "default_service";
+      const template_id = "kyokushin";
+      const user_id = 'user_0Duap72E6rc3HeaQGPtKc';
+      emailjs.send(service_id, template_id, template_params, user_id)
+        .then(function(response) {
+            alert('Email sent successfully!');
+          }, function(err) {
+            console.log('Oops some error occured! Please call us at the provided number. Sorry for the inconvenience');
+          });
+      resetForm();
     }
 
 
