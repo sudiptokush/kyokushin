@@ -206,12 +206,12 @@ body {
   line-height: 2;
   column-count: 4;
   column-gap: 0px; 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1740px) {
     line-height: 2;
     column-count: 3;
     column-gap: 0px;  
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1300px) {
     line-height: 2;
     column-count: 2;
     column-gap: 0px;  
