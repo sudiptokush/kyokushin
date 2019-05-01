@@ -216,11 +216,6 @@ body {
     column-count: 2;
     column-gap: 0px;  
   }  
-  @media screen and (max-width: 400px) {
-    line-height: 2;
-    column-count: 1;
-    column-gap: 0px;  
-  }  
   .image-tile {
     width: 100% !important;
     height: auto !important;
