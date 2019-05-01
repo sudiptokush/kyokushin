@@ -8,7 +8,8 @@ const Contact =  () => {
     const [message, setMessage] = useState("");
     const sendEmail = (evt) => {
       evt.preventDefault();
-      alert(`${name} /  ${mobile} / ${email} / ${message}`);
+      //alert(`${name} /  ${mobile} / ${email} / ${message}`);
+      alert("Email service is down. Please contact us using the provided numbers. Sorry for the inconvinience");
     }
     return <Layout>
       <div className="tiles-container-contact">
