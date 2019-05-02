@@ -2,9 +2,11 @@ import React from "react";
 import Layout from "../components/layout"
 import ImageProcessor from "../components/image-processor";
 import CarouselProcessor from "../components/carousel-processor";
+import SEO from "../components/seo";
 
 export default () => (
   <Layout imageSource="masOyama"> 
+    <SEO title="Kyokushin Home" keywords={['Kyokushin','India','Kyokushin-india','Karate','Self Defence','Sports','Karate India','Mas Oyama','Masutatsu Oyama','Kancho','Kancho Shokei Matsu']}/>
     <div className="home-banner-image-content">
         <CarouselProcessor></CarouselProcessor>
     </div>
