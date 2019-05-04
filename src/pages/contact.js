@@ -32,12 +32,12 @@ const Contact =  () => {
       const service_id = "default_service";
       const template_id = "kyokushin";
       const user_id = 'user_0Duap72E6rc3HeaQGPtKc';
-      emailjs.send(service_id, template_id, template_params, user_id)
-        .then(function(response) {
-            alert('Email sent successfully!');
-          }, function(err) {
-            console.log('Oops some error occured! Please call us at the provided number. Sorry for the inconvenience');
-          });
+      // emailjs.send(service_id, template_id, template_params, user_id)
+      //   .then(function(response) {
+      //       alert('Email sent successfully!');
+      //     }, function(err) {
+      //       console.log('Oops some error occured! Please call us at the provided number. Sorry for the inconvenience');
+      //     });
       resetForm();
     }
 
@@ -63,26 +63,26 @@ const Contact =  () => {
            <tbody>
               <tr>
                 <td>
-                    <label>Name <span>*</span></label>
+                    <label>Name <span className="highlight">*</span></label>
                 </td>
                 <td>
-                    <input type="text" required name="name" value={name} onChange={e => setName(e.target.value)}/>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <label>Mobile <span>*</span></label>
-                </td>
-                <td>
-                    <input type="text" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" value={mobile} onChange={e => setMobile(e.target.value)}/>
+                    <input type="text" placeholder="Please enter your name" required name="name" value={name} onChange={e => setName(e.target.value)}/>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <label>Email <span>*</span></label>
+                    <label>Mobile <span className="highlight">*</span></label>
                 </td>
                 <td>
-                    <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input type="text" placeholder="Please enter mobile number" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" value={mobile} onChange={e => setMobile(e.target.value)}/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <label>Email <span className="highlight">*</span></label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Please enter your email id" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                 </td>
               </tr>
               <tr>
@@ -90,7 +90,7 @@ const Contact =  () => {
                     <label>Message</label>
                 </td>
                 <td>
-                    <textarea rows="6" name="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                    <textarea rows="6" placeholder="Please enter your message" name="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 </td>
               </tr>
               <tr>
@@ -101,6 +101,7 @@ const Contact =  () => {
             </tbody>  
           </table>
         </form>
+        <div className="notes"> Fields marked with <span className="highlight">*</span> are required</div>
         </div>
       </div>
     </Layout>

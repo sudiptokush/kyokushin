@@ -14,7 +14,7 @@ import seoJson from "../assets/seo.json";
     }
     return <Layout imageSource="masOyama">
             <SEO title="Kyokushin Founder" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
-            <div class="founder">
+            <div className="founder">
               <div className="mas-oyama">
               <a onClick={ e => founderDetails()}>
                 <div className="wide-tile">

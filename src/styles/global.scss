@@ -12,9 +12,6 @@ body {
     text-align: center;
     font-size: 1.5em;
     background: #eac691;
-    .highlight {
-      color:red;
-    }
   }
   .content-container {
     .left-inset-image-content {
@@ -235,7 +232,7 @@ body {
     padding: 1rem;
     li {
       padding: .5rem;
-      margin-bottom: .42rem;
+      margin-bottom: .28rem;
     }
     iframe {
       width:99%;
@@ -249,22 +246,30 @@ body {
     padding: 1rem;
     .form-header {
       text-align: center;
+      font-weight: bold;
     }
     .contact-form {
       width: 100%;
-      height: 30rem;
+      height: 28rem;
+      min-height: 400px;
       td {
         text-align: center;
       }
       input {
         height: 1.4rem;
         width: 14rem;
+        background: #f5ede0;
       }
       textarea {
         width: 14rem;
         height: 9rem;
+        background: #f5ede0;
       }
     }
+  }
+  .notes {
+    float: right;
+    font-size: .8rem;
   }
 }
 
@@ -278,6 +283,9 @@ body {
   margin: 0 0 2rem 0;
 }
 
+.highlight {
+  color:red;
+}
 
 
 
