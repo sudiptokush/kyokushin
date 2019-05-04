@@ -1,3 +1,5 @@
+@import "../styles/theme.scss";
+
 .container {
     display: grid;
     grid-template-areas:
@@ -11,33 +13,34 @@
     .header {
         grid-area: header;
         font-weight: bold;
+        background: $header-footer-background-color;
     }
 
     .leftWidget {
         grid-area: left;
         justify-self: center;
         padding: 1rem 1rem 0 2rem;  
-        background: #f9e9cd;   
+        background: $main-background-color;  
     }
     
     .rightWidget {
         grid-area: right; 
         overflow-x: auto;
         padding: 1rem 0 1rem 0;
-        background: #f9e9cd; 
+        background: $main-background-color; 
     }
     
     .main {
         grid-area: main;
         padding: .5rem 1rem 1.5rem 1rem;
         overflow-x: auto;
-        background: #f9e9cd; 
+        background: $main-background-color; 
     }
     
     .footer {
         grid-area: footer;
-        background: #343a40;
-        color:white;
+        background: $header-footer-background-color;
+        color: $header-footer-font-color;
     }
 }
 
