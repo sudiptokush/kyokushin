@@ -6,30 +6,30 @@
     'footer footer footer';
     grid-template-columns: minmax(150px,12vw) minmax(700px,auto) minmax(200px,15vw);
     grid-template-rows: 6vh 91vh 3vh;
+    background: #f9e9cd; 
+    font-style: italic; 
 
     .header {
         grid-area: header;
+        font-weight: bold;
     }
 
     .leftWidget {
         grid-area: left;
         justify-self: center;
-        padding: 1rem 1rem 0 2rem;   
-        background: #f9e9cd;   
+        padding: 1rem 1rem 0 2rem;    
     }
     
     .rightWidget {
         grid-area: right; 
         overflow-x: auto;
         padding: 1rem 0 1rem 0;
-        background: #f9e9cd;
     }
     
     .main {
         grid-area: main;
         padding: .5rem 1rem 1.5rem 1rem;
-        overflow-x: auto; 
-        background: #f9e9cd;
+        overflow-x: auto;
     }
     
     .footer {

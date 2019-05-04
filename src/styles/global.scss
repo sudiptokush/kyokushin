@@ -11,7 +11,7 @@ body {
   .sub-header {
     text-align: center;
     font-size: 1.5em;
-    background: #f5c1c1;
+    background: #eac691;
     .highlight {
       color:red;
     }
@@ -28,7 +28,6 @@ body {
       padding: 2rem 0 0 0;
       .quotes {
         font-size: 1.2em;
-        font-style: oblique;
         .quoted-by {
           float: right;
           font-weight: bold;
@@ -48,8 +47,9 @@ body {
     padding: 1rem;
     height: 25rem;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    background: #eac691;
     &:hover {
-      background: #f5eded;
+      background: #f9dfba;
     }
     .left-tile-image-content {
       float: left;
@@ -69,10 +69,10 @@ body {
       text-align: center;
       overflow: hidden;
       box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-      background: #cfd4d3;
+      background: #eac691;
       font-weight: bold;
       &:hover {
-        background: #e7e8e8;
+        background: #f9dfba;
       }
     }
   }
@@ -120,8 +120,9 @@ body {
     overflow: hidden;
     padding: 1rem;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    background: #eac691;
     &:hover {
-      background: #f5eded;
+      background: #f9dfba;
     }
     .left-tile-image-content {
       float: left;
@@ -149,22 +150,15 @@ body {
 }
 
 .gurukul {
+  padding: 1rem 2rem 0 0;
   .left-inset-image-content {
     width: 30%;
     float: left;
-    margin: 2rem 2rem 1rem 0;
+    margin: 0 2rem 1rem 0;
   }
   .body-content{
     text-align: justify;
     font-size: 1.1em;
-    padding: 2rem 0 0 0;
-    .quotes {
-      font-size: .8em;
-      font-weight: bold;
-      .quoted-by {
-        float: right;
-      }
-    }
   }
 }
 
@@ -195,9 +189,18 @@ body {
 }
 
 .events{
+  .nav-tabs{
+    a {
+      color: black;
+    }
+    a[aria-selected="true"]{
+      background: #eac691;
+      color: black;
+    }
+  }
   .tab-content{
     padding: 1rem;
-    border: 1px solid #ded6d6;
+    border: 1px solid #948f8f;
   }
   
   .event-table {

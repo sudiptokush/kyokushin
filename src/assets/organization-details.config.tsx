@@ -14,7 +14,7 @@ const shokeiMatsui = <div className="organization-details">
                             </div>
                             <div className="body-content">
                                 <p>
-                                    Kancho Shokei Matsui (IKO, Kyokushin kai kan)
+                                    <strong>Kancho Shokei Matsui (IKO, Kyokushin kai kan)</strong>
                                 </p>
                                 <p>
                                     Shokei (Akiyoshi) Matsui was born in Bunkyo-ku, Tokyo, on 15 th January
