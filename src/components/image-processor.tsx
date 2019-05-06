@@ -39,7 +39,7 @@ function ImageProcessor({ source, type }) {
       logoMiddle: 
       file(relativePath: { eq: "logo-middle.png" }) {
         childImageSharp {
-          fixed(width: 150) {
+          fixed(width: 140) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -47,7 +47,7 @@ function ImageProcessor({ source, type }) {
       logoBottom: 
       file(relativePath: { eq: "logo-bottom.png" }) {
         childImageSharp {
-          fixed(width: 180) {
+          fixed(width: 170) {
             ...GatsbyImageSharpFixed
           }
         }
