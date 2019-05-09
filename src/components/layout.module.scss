@@ -9,11 +9,17 @@
     grid-template-columns: minmax(150px,12vw) minmax(700px,auto) minmax(200px,15vw);
     grid-template-rows: 6vh 91vh 3vh;
     font-style: italic; 
+    
 
     .header {
         grid-area: header;
         font-weight: bold;
         background: $header-footer-background-color;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 6vh;
+        z-index: 99;
     }
 
     .leftWidget {
@@ -41,6 +47,10 @@
         grid-area: footer;
         background: $header-footer-background-color;
         color: $header-footer-font-color;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 3vh;
     }
 }
 
