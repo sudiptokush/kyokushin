@@ -3,7 +3,7 @@ module.exports = {
     title: `Kyokushin Kai Kan India`,
     description: `Kyokushin is a style of stand-up, full contact karate, founded in 1964 by Korean-
     Japanese Masutatsu Oyama.`,
-    author: `Kush Infotech`,
+    author: `Sudipto Mukherjee`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
